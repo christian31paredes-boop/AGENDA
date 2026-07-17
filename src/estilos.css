@@ -1,0 +1,221 @@
+/* --- ESTILOS GENERALES --- */
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #f0f2f5;
+margin: 0;
+padding: 20px;
+display: flex;
+justify-content: center;
+}
+
+.contenedor-app {
+width: 100%;
+max-width: 960px;
+background: #ffffff;
+padding: 25px;
+border-radius: 12px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.titulo-principal {
+text-align: center;
+color: #1a1a1a;
+margin-top: 0;
+margin-bottom: 25px;
+font-size: 2rem;
+}
+
+/* --- SISTEMA DE COLUMNAS --- */
+.layout-columnas {
+display: flex;
+gap: 30px;
+}
+
+.columna-izquierda,
+.columna-derecha {
+flex: 1;
+}
+
+/* --- BUSCADOR --- */
+.buscador-contenedor {
+margin-bottom: 20px;
+}
+
+.input-buscador {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccd0d5;
+border-radius: 8px;
+box-sizing: border-box;
+font-size: 1rem;
+transition: border-color 0.2s;
+}
+
+.input-buscador:focus,
+.input-formulario:focus {
+outline: none;
+border-color: #007bff;
+}
+
+/* --- FORMULARIO (COLUMNA IZQUIERDA) --- */
+.formulario-contacto {
+background: #f8f9fa;
+padding: 20px;
+border-radius: 8px;
+border: 1px solid #e9ecef;
+}
+
+.titulo-formulario {
+font-size: 1.25rem;
+color: #495057;
+margin-top: 0;
+margin-bottom: 15px;
+}
+
+.input-formulario {
+width: 100%;
+padding: 10px;
+margin-bottom: 12px;
+border: 1px solid #ced4da;
+border-radius: 6px;
+box-sizing: border-box;
+font-size: 0.95rem;
+}
+
+.contenedor-botones {
+display: flex;
+gap: 10px;
+}
+
+.error-mensaje {
+color: #dc3545;
+font-size: 0.85rem;
+font-weight: 600;
+margin-top: 0;
+margin-bottom: 12px;
+}
+
+/* --- BOTONES GENERALES --- */
+button {
+cursor: pointer;
+font-weight: bold;
+transition: opacity 0.2s;
+}
+
+button:hover {
+opacity: 0.9;
+}
+
+.boton-guardar {
+flex: 1;
+background-color: #28a745;
+color: #ffffff;
+border: none;
+padding: 11px;
+border-radius: 6px;
+font-size: 0.95rem;
+}
+
+.boton-cancelar {
+flex: 1;
+background-color: #6c757d;
+color: #ffffff;
+border: none;
+padding: 11px;
+border-radius: 6px;
+font-size: 0.95rem;
+}
+
+/* --- BOTÓN MOSTRAR/OCULTAR (COLUMNA DERECHA) --- */
+.seccion-acciones-lista {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.boton-mostrar-ocultar {
+background-color: #17a2b8;
+color: #ffffff;
+border: none;
+padding: 11px 20px;
+border-radius: 6px;
+font-size: 0.95rem;
+width: 100%;
+transition: background-color 0.2s;
+}
+
+.boton-mostrar-ocultar:hover {
+background-color: #138496;
+}
+
+/* --- LISTA Y TARJETAS DE CONTACTOS --- */
+.lista-contactos {
+display: flex;
+flex-direction: column;
+gap: 12px;
+max-height: 380px;
+overflow-y: auto;
+padding-right: 5px;
+}
+
+.tarjeta-contacto {
+background: #ffffff;
+border: 1px solid #e9ecef;
+border-radius: 8px;
+padding: 15px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+
+.nombre-contacto {
+margin: 0 0 6px 0;
+font-size: 1.1rem;
+color: #212529;
+}
+
+.correo-contacto,
+.telefono-contacto {
+margin: 2px 0;
+font-size: 0.88rem;
+color: #6c757d;
+}
+
+.acciones-tarjeta {
+display: flex;
+flex-direction: column;
+gap: 6px;
+}
+
+.boton-editar {
+background-color: #007bff;
+color: #ffffff;
+border: none;
+padding: 6px 12px;
+border-radius: 4px;
+font-size: 0.85rem;
+}
+
+.boton-eliminar {
+background-color: #dc3545;
+color: #ffffff;
+border: none;
+padding: 6px 12px;
+border-radius: 4px;
+font-size: 0.85rem;
+}
+
+.no-resultados {
+text-align: center;
+color: #868e96;
+font-style: italic;
+margin-top: 15px;
+}
+
+/* --- ADAPTABILIDAD MÓVIL --- */
+@media (max-width: 768px) {
+.layout-columnas {
+    flex-direction: column;
+    gap: 20px;
+}
+}
